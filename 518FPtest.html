@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<body onload="randomSite();">
+<script type="text/javascript">
+   var sites = [
+        'https://docs.google.com/forms/d/e/1FAIpQLSdX0LeDjv_knoTKOuV4SMWk52RnPwwwG_FKLLynWu6IpqYNng/viewform',
+        'https://docs.google.com/forms/d/e/1FAIpQLSeJ_DTnRyPiIxRaXkI-ArOBcIjjTxNqKaWmpff5eywApUITcQ/viewform'
+    ];
+
+    function randomSite() {
+        //var i = parseInt( * sites.length);
+        var a = Math.random();
+        if (a < 0.5) {
+         location.href = sites[0];
+        } else {
+         location.href = sites[1];
+        }
+        
+    }
+</script>
+</body>
+</html>
